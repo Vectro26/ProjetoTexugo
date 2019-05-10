@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ProjetoTexugoScan',
+    'TexugoScanInit',
 ]
 
 MIDDLEWARE = [
@@ -53,8 +55,9 @@ ROOT_URLCONF = 'ProjetoTexugoScan.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+    
+        'DIRS': ['/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/TexugoScanInit',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,6 +83,9 @@ DATABASES = {
     }
 }
 
+STATICFILES_DIRS = [
+    ("estilos","/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/TexugoScanInit/static/TexugoScanInit"),
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
