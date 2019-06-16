@@ -17,7 +17,6 @@
   <!-- Custom fonts for this template -->
   <link href="{% static 'estilos/vendor/all.min.css' %}" rel="stylesheet">
   <link href="{% static 'estilos/vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet" type="text/css">
-  <link href="{%https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic%}" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="{% static 'estilos/css/landing-page.css' %}" rel="stylesheet">
@@ -47,15 +46,19 @@
           </h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="enter the domain">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Collect!</button>
-              </div>
-            </div>
+            <form action="collect"  method="post">
+                {% csrf_token %}
+                {{ form }}
+
+              <div class="form-row">
+                  <div class="col-12 col-md-9 mb-2 mb-md-0">
+                      <input id="url" type="text" class="form-control form-control-lg" placeholder="enter the domain" name="nome" value="">
+                    
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <input type="submit" class="btn btn-block btn-lg btn-primary"></input>
+                  </div>
+                </div>                       
           </form>
         </div>
       </div>
@@ -145,5 +148,4 @@
   <script src=" {% static 'estilos/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
-
 </html>
