@@ -2,6 +2,7 @@ import Verification
 import time
 import BannerGrabing 
 import Whois 
+import EnumerationSubdomain
 class Init:
     if __name__ == '__main__':
         URL =""
@@ -15,6 +16,7 @@ class Init:
     
     if request== True:
         BannerGrabing.BannerCollect(URL)
-        Whois.WhoisCollect(URL) 
+        Whois.WhoisCollect(URL)
+        EnumerationSubdomain.BruteforceEnumeration(URL) 
     else: 
         pass
