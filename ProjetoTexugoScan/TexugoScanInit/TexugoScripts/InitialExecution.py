@@ -3,6 +3,7 @@ import time
 import BannerGrabing 
 import Whois 
 import EnumerationSubdomain
+import PortScanning
 class Init:
     if __name__ == '__main__':
         URL =""
@@ -11,12 +12,15 @@ class Init:
     URL=input("enter the URL to start the collection")    
     ini = time.time()
     request= Verification.URLVerification(URL)
-    fim = time.time()    
+     
    
     
     if request== True:
         BannerGrabing.BannerCollect(URL)
+        PortScanning.PortScannerVerification(URL)
         Whois.WhoisCollect(URL)
-        EnumerationSubdomain.BruteforceEnumeration(URL) 
+        EnumerationSubdomain.BruteforceEnumeration(URL)
+        fim = time.time() 
+        print(ini-fim)
     else: 
         pass
