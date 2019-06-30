@@ -1,6 +1,7 @@
 import whois
 import tldextract
 import socket
+import json
 from ipwhois import IPWhois
 from pprint import pprint
 def WhoisCollect(URL):
@@ -9,8 +10,8 @@ def WhoisCollect(URL):
     print(domainURL)
     IP=socket.gethostbyname(domainURL)
     obj = IPWhois(IP)
-    results = obj.lookup_rdap(depth=1)
-    pprint(results)
+    results = obj.lookup_whois()
+    pprint(results['nets'])
     
 
 def AdequacyURL(URL):

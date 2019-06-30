@@ -13,7 +13,7 @@ def BruteforceEnumeration(URL):
     
 def ListGenerate(domain):
 
-    with open('/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/TexugoScanInit/TexugoScripts/bruteforceSubdomain/subdomainNames.txt') as names:
+    with open('/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit/bruteforceSubdomain') as names:
         dnsName=names.readlines()
         
     for subdomain in dnsName :
