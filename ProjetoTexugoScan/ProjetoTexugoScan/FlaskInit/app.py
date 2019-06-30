@@ -1,11 +1,12 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, make_response
 import Verification  
 import time
 import BannerGrabing 
 import Whois 
 import EnumerationSubdomain
 import PortScanning
-
+import ReverseDNS 
+import TechnologyIdentification
 app = Flask(__name__)
 
 
@@ -25,7 +26,7 @@ def collect():
     if requests== True:
         BannerGrabing.BannerCollect(URL)
         Whois.WhoisCollect(URL)
-        PortScanning.PortScannerVerification(URL)
+        #PortScanning.PortScannerVerification(URL)
         EnumerationSubdomain.BruteforceEnumeration(URL)
         
         

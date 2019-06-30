@@ -4,7 +4,7 @@ import BannerGrabing
 import Whois 
 import EnumerationSubdomain
 import PortScanning
-
+import IpBlock
 class Init:
     if __name__ == '__main__':
         URL =""
@@ -18,8 +18,9 @@ class Init:
     
     if request== True:
         BannerGrabing.BannerCollect(URL)
-        PortScanning.PortScannerVerification(URL)
+        #PortScanning.PortScannerVerification(URL)
         Whois.WhoisCollect(URL)
+        IpBlock.WhoisCollect(URL)
         EnumerationSubdomain.BruteforceEnumeration(URL)
         fim = time.time() 
         print(ini-fim)
