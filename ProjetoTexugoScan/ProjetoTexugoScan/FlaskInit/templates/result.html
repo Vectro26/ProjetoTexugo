@@ -31,7 +31,14 @@
 		</header>
 		<div class="filter-content">
 			<div class="card-body">
-			
+        <table border = 1>
+          {% for banners in banner %}
+             <tr>
+                <th> {{ banners.key }} </th>
+                <td> {{ banners.value }} </td>
+             </tr>
+          {% endfor %}
+       </table>
 			</div> <!-- card-body.// -->
 		</div>
 	</article> <!-- card-group-item.// -->

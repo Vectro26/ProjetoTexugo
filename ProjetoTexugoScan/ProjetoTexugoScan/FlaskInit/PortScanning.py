@@ -1,17 +1,16 @@
-import nmap
 import ReverseDNS as IP
+import socket
+StatusPort = []
 def PortScannerVerification(URL):
-     scanNmap= nmap.PortScanner()
-     scanNmap.scan(IP.GetIp(URL))
-     for host in scanNmap.all_hosts():
-        print('----------------------------------------------------')
-        print('Host : %s (%s)' % (host, scanNmap[host].hostname()))
-     print('State : %s' % scanNmap[host].state())
-     for proto in scanNmap[host].all_protocols():
-        print('----------')
-        print('Protocol : %s' % proto)
- 
-        lport = scanNmap[host][proto].keys()
-        lport.sort()
-        for port in lport:
-            print ('port : %s\tstate : %s' % (port, scanNmap[host][proto][port]['state']))
+     ports = [21,22,23,80]
+     IpPort =IP.GetIp(URL)
+     for port in ports: 
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(1) 
+        codeReturn = sock.connect_ex((IpPort, port))  
+        sock.close() 
+        if codeReturn == 0:
+             print (port)
+             StatusPort.insert(port,"Open")
+
+             return StatusPort

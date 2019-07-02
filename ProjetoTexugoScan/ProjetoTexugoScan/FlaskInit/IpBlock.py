@@ -11,8 +11,8 @@ def WhoisCollect(URL):
     IP=socket.gethostbyname(domainURL)
     obj = IPWhois(IP)
     results = obj.lookup_whois()
-    pprint(results['nets'])
     
+    return(results['nets']) 
 
 def AdequacyURL(URL):
     domainDetected = tldextract.extract(URL)

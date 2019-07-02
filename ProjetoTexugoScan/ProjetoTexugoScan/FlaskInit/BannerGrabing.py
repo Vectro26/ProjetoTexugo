@@ -1,4 +1,5 @@
 import requests
+BannerList= {}
 
 def BannerCollect(url):
 
@@ -6,3 +7,6 @@ def BannerCollect(url):
 
     for cabecalho,conteudo in result.headers.items():
             print(cabecalho,":",conteudo)  
+            BannerList[cabecalho]=conteudo    
+                    
+            return BannerList

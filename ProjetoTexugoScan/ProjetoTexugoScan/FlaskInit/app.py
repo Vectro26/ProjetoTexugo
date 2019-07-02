@@ -3,10 +3,12 @@ import Verification
 import time
 import BannerGrabing 
 import Whois 
-import EnumerationSubdomain
+#import EnumerationSubdomain
 import PortScanning
 import ReverseDNS 
 import TechnologyIdentification
+import IpBlock
+
 app = Flask(__name__)
 
 
@@ -24,15 +26,15 @@ def collect():
     
     requests= Verification.URLVerification(URL)
     if requests== True:
-        BannerGrabing.BannerCollect(URL)
-        Whois.WhoisCollect(URL)
-        #PortScanning.PortScannerVerification(URL)
-        EnumerationSubdomain.BruteforceEnumeration(URL)
-        
-        
-        return 'OK'
+       # Banner=BannerGrabing.BannerCollect(URL)
+        whois= Whois.WhoisCollect(URL)
+        Port =PortScanning.PortScannerVerification(URL)
+        Technology= TechnologyIdentification.TechnologyIdentification(URL)
+        IP=IpBlock.WhoisCollect(URL)
+        DNS=ReverseDNS.ReverseNameDNS(URL)
+        return redirect('result.html',banner=Port)
     else: 
-        return 'OK'
+        return False
 if __name__ == "__main__":
     app.debug = True
     app.run()

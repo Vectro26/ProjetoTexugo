@@ -18,7 +18,7 @@ class Init:
     
     if request== True:
         BannerGrabing.BannerCollect(URL)
-        #PortScanning.PortScannerVerification(URL)
+        PortScanning.PortScannerVerification(URL)
         Whois.WhoisCollect(URL)
         IpBlock.WhoisCollect(URL)
         EnumerationSubdomain.BruteforceEnumeration(URL)

@@ -7,7 +7,8 @@ def WhoisCollect(URL):
     domainURL = AdequacyURL(URL)
     print(domainURL)
     result = whois.whois(domainURL)
-    print(result.text)
+    return (result.text)
+    
 
 
 def AdequacyURL(URL):

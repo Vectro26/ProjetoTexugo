@@ -9,6 +9,6 @@ def TechnologyIdentification(URL):
     if results.status_code == 200:
             dataload = json.loads(results.content)
 
-            print(dataload['results'])
+            return dataload['results']
     else:
-            print(results.content)
+            return "None"
