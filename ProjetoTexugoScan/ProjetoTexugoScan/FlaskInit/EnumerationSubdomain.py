@@ -5,9 +5,8 @@ from multiprocessing.pool import ThreadPool as Pool
 
 domain = ""
 subdomainList=[]
-domainDetected={}
+domainDetected=[]
 def BruteforceEnumeration(URL):
-    print("Anderson")
     domain = detected.AdequacyURL(URL)
     ListGenerate(domain)
     return domainDetected
@@ -24,7 +23,7 @@ def ListGenerate(domain):
     
 def TestRequest(subdomainList):
     try:   
-        # domainDetected[subdomainList]= socket.gethostbyname(subdomainList))
+         domainDetected.append("IP:"+socket.gethostbyname(subdomainList)+  "Subdomain:"+subdomainList) 
     except socket.gaierror: 
         pass
                 

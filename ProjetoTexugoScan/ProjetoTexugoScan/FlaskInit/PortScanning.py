@@ -11,6 +11,6 @@ def PortScannerVerification(URL):
         sock.close() 
         if codeReturn == 0:
              print (port)
-             StatusPort.insert(port,"Open")
+             StatusPort.append(str(port))
 
              return StatusPort

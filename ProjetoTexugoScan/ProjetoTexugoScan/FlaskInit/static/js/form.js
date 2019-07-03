@@ -14,10 +14,7 @@ $(document).ready(function() {
 
 			if (data.error) {
             alert('error')    
-            }
-			else {
-                alert('sucess') 
-			}
+            }	
 
 		});
 

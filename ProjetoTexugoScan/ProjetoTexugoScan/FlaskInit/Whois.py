@@ -5,9 +5,10 @@ import tldextract
 def WhoisCollect(URL):
 
     domainURL = AdequacyURL(URL)
-    print(domainURL)
-    result = whois.whois(domainURL)
-    return (result.text)
+    
+    result = whois.query(domainURL)
+    print(result.__dict__)
+    return (result.__dict__)
     
 
 
