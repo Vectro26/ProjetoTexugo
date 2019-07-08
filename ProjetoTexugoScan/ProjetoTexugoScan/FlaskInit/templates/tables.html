@@ -3,20 +3,16 @@
   <head>
     <title>TexugoScan report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- jQuery UI -->
-    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+      <!-- Bootstrap core CSS -->
 
-    <!-- Bootstrap -->
-    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <!-- styles -->
-    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/landing-page.css') }}" rel="stylesheet">
+
   </head>
   <body>
   	<div class="header">
@@ -25,7 +21,7 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="index.html">Texugo Scan Report</a></h1>
+	                 <h1><a href="/">Texugo Scan Report</a></h1>
 	              </div>
 	           </div>
 	           
@@ -43,7 +39,7 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
 
                     
                
@@ -73,7 +69,7 @@
 				              <tbody>
 													{% for key in banner %}
 												<tr>
-				                  <td>{{val}}</td>
+				                  <td>{{val}}</td> <br>
 				                </tr>
 				                {% endfor %}
 				              </tbody>
@@ -86,10 +82,6 @@
 		  				<div class="panel-heading">
 							<div class="panel-title">Port Scan</div>
 							
-							<div class="panel-options">
-								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-							</div>
 						</div>
 		  				<div class="panel-body">
 		  					<table class="table table-striped">
@@ -118,10 +110,7 @@
 		  				<div class="panel-heading">
 							<div class="panel-title">Reverse DNS</div>
 							
-							<div class="panel-options">
-								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-							</div>
+							
 						</div>
 		  				<div class="panel-body">
 		  					<table class="table table-bordered">
@@ -148,10 +137,7 @@
 		  				<div class="panel-heading">
 							<div class="panel-title">Technology</div>
 							
-							<div class="panel-options">
-								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-							</div>
+							
 						</div>
 		  				<div class="panel-body">
 									<table class="table">
@@ -181,10 +167,7 @@
 		  				<div class="panel-heading">
 							<div class="panel-title">IP Block</div>
 							
-							<div class="panel-options">
-								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-							</div>
+							
 						</div>
 		  				<div class="panel-body">
 		  					
@@ -209,21 +192,15 @@
 		  				<div class="panel-heading">
 							<div class="panel-title">Enumerate Subdomain</div>
 							
-							<div class="panel-options">
-								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
-							</div>
+							
 						</div>
 		  				<div class="panel-body">
 									<thead>
-											<tr>
-												<th>IP and Subdomain</th>
-											</tr>
 										</thead>
 										<tbody>
 												{% for val in subdomain %}
 											<tr>
-												<td>{{val}}</td>
+												<td>{{val}}</td> <br>
 											</tr>
 											{% endfor %}
 										</tbody>
@@ -268,59 +245,65 @@
 		</div>
     </div>
 
-    <footer class="footer bg-light">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-							<ul class="list-inline mb-2">
+		 <!-- Footer -->
+		 <footer class="footer bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+						<ul class="list-inline mb-2">
+							<li class="list-inline-item">
+								<a href="#">About</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Contact</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Terms of Use</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Privacy Policy</a>
+							</li>
+						</ul>
+						<p class="text-muted small mb-4 mb-lg-0">&copy; Texugo Scan 2019. All Rights Reserved.</p>
+					</div>
+					<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item mr-3">
+								<a href="#">
+									<i class="fab fa-facebook fa-2x fa-fw"></i>
+								</a>
+							</li>
+							<li class="list-inline-item mr-3">
+								<a href="#">
+									<i class="fab fa-twitter-square fa-2x fa-fw"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-instagram fa-2x fa-fw"></i>
+								</a>
 								<li class="list-inline-item">
-									<a href="#">About</a>
-								</li>
-								<li class="list-inline-item">&sdot;</li>
-								<li class="list-inline-item">
-									<a href="#">Contact</a>
-								</li>
-								<li class="list-inline-item">&sdot;</li>
-								<li class="list-inline-item">
-									<a href="#">Terms of Use</a>
-								</li>
-								<li class="list-inline-item">&sdot;</li>
-								<li class="list-inline-item">
-									<a href="#">Privacy Policy</a>
-								</li>
-							</ul>
-							<p class="text-muted small mb-4 mb-lg-0">&copy; Texugo Scan 2019. All Rights Reserved.</p>
-						</div>
-						<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-							<ul class="list-inline mb-0">
-								<li class="list-inline-item mr-3">
 									<a href="#">
-										<i class="fab fa-facebook fa-2x fa-fw"></i>
+										<i class="fab fa-github fa-2x fa-fw"></i>
 									</a>
-								</li>
-								<li class="list-inline-item mr-3">
-									<a href="#">
-										<i class="fab fa-twitter-square fa-2x fa-fw"></i>
-									</a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#">
-										<i class="fab fa-instagram fa-2x fa-fw"></i>
-									</a>
-									<li class="list-inline-item">
-										<a href="#">
-											<i class="fab fa-github fa-2x fa-fw"></i>
-										</a>
-								</li>
-							</ul>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</footer>
-		
+			</div>
+		</footer>
 
-      <link href="{{ url_for('static', filename='vendors/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" media="screen">
 
+
+
+  <link href="{{ url_for('static', filename='vendors/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" media="screen">
+			 <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <!--<script src="{{ url_for('static', filename='js/form.js') }}"></script>-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- jQuery UI -->
@@ -333,6 +316,10 @@
     <script src="{{ url_for('static', filename='vendors/datatables/dataTables.bootstrap.js') }}"></script>
 
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/tables.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/tables.js') }}"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+		<!--<script src="{{ url_for('static', filename='js/form.js') }}"></script>-->
   </body>
 </html>

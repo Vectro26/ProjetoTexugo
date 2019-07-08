@@ -1,6 +1,7 @@
 import os
 import Whois as detected
 import socket
+import re
 from multiprocessing.pool import ThreadPool as Pool
 
 domain = ""
@@ -12,7 +13,7 @@ def BruteforceEnumeration(URL):
     return domainDetected
 def ListGenerate(domain):
 
-    with open('ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit/bruteforceSubdomain/subdomainNames.txt') as names:
+    with open('/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit/bruteforceSubdomain/subdomainNames.txt') as names:
         dnsName=names.readlines()
         
     for subdomain in dnsName :
@@ -22,8 +23,14 @@ def ListGenerate(domain):
     pool.map(TestRequest, subdomainList)
     
 def TestRequest(subdomainList):
-    try:   
-         domainDetected.append("IP:"+socket.gethostbyname(subdomainList)+  "Subdomain:"+subdomainList) 
+    try:  
+         
+        IP=socket.gethostbyname_ex(subdomainList)
+        check = ''.join(str(IP))
+        
+        if re.search('\\b.domain.name\\b', check, re.IGNORECASE):
+            pass
+        else:
+            domainDetected.append(check) 
     except socket.gaierror: 
         pass
-                
