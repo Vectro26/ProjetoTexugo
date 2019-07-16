@@ -1,22 +1,12 @@
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="Anderson Cirilo Valentim and José Gildo de Oliveira Junior " content="">
-
-  <title>Texugo Scan</title>
- <!-- Bootstrap core CSS -->
-
- <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
- <!-- Custom fonts for this template -->
- <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
- <link href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" type="text/css">
-
- <!-- Custom styles for this template -->
- <link href="{{ url_for('static', filename='css/landing-page.css') }}" rel="stylesheet">
-
-  <!-- Bootstrap core CSS -->
-
+<!DOCTYPE html>
+<html>
+  <head>
+			<meta name="Anderson Cirilo Valentim and José Gildo de Oliveira Junior " content="">
+    <title>TexugoScan report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap core CSS -->
+	<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">	
+	<link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">	
   <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <!-- Custom fonts for this template -->
   <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
@@ -24,167 +14,316 @@
 
   <!-- Custom styles for this template -->
   <link href="{{ url_for('static', filename='css/landing-page.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet">
-</head>
-<body>
-<div class="container">
-<br>  <p class="text-center"> Texugo Scan Generated Report</a></p>
-<hr>
 
-<div class="row">
-	<aside class="col-sm-4">
-<div class="card">
-	<article class="card-group-item">
-		<header class="card-header">
-			<h6 class="title">Banner Grabing </h6>
-		</header>
-		<div class="filter-content">
-			<div class="card-body">
-        
-          {% banner %}
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="/">Texugo Scan Report Host:{{host}}</a></h1>
+	              </div>
+	           </div>
+	           
+	           <div class="col-md-2">
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li><a href="/"><i class="glyphicon glyphicon-home"></i> Dashboard</a></li>
+
                     
-        
-			</div> <!-- card-body.// -->
+               
+             </div>
+		  </div>
+		  <div class="col-md-10">
+
+		  	<div class="row">
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">Banner Grabing</div>
+							
+							<div class="panel-options">
+								<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+							</div>
+						</div>
+		  				<div class="panel-body">
+		  					<table class="table">
+				              <thead>
+				                <tr>
+				                  <th>Heardes and  Content</th>
+				                  <th></th>
+				                </tr>
+				              </thead>
+				              <tbody>
+													{% for val in banner %}
+													<tr>
+														<td>{{val}}</td>
+													</tr>
+													{% endfor %}
+												
+				                
+				              </tbody>
+				            </table>
+		  				</div>
+		  			</div>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">Port Scan</div>
+							
+						</div>
+		  				<div class="panel-body">
+		  					<table class="table table-striped">
+				              <thead>
+				                <tr>
+				                  <th>Port(OPEN)</th>				                  
+				                </tr>
+				              </thead>
+				              <tbody>
+													{% for val in port %}
+													<tr>
+														<td>{{val}}</td>
+													</tr>
+													{% endfor %}
+				                  
+				              </tbody>
+				            </table>
+		  				</div>
+		  			</div>
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">Reverse DNS</div>
+							
+							
+						</div>
+		  				<div class="panel-body">
+		  					<table class="table table-bordered">
+				              <thead>
+				                <tr>
+				                  <th>#</th>
+				                  <th>Name Server</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+				                <tr>
+				                  <td>1</td>
+				                  <td>{{nameServer}}</td>
+				                  
+				                </tr>
+				                
+				              </tbody>
+				            </table>
+		  				</div>
+		  			</div>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">Technology</div>
+							
+							
+						</div>
+		  				<div class="panel-body">
+									<table class="table">
+				              <thead>
+				                <tr>
+				                  <th>Data</th>
+				                  <th>Value</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+													
+												<tr>
+				                  <td>{{Technology}}</td>
+				                  
+				                </tr>
+				                
+				              </tbody>
+				            </table>
+		  				</div>
+		  			</div>
+  				</div>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">IP Block</div>
+							
+							
+						</div>
+		  				<div class="panel-body">
+		  					
+				                <tr>
+				                  <th>#</th>
+				                  <th>Name Server</th>
+				                </tr>
+				              </thead>
+				              <tbody>
+													
+													<tr>
+														<td>{{IpBlock}}</td>
+												</tr>
+												
+				              </tbody>
+				            </table>
+		  				</div>
+		  			</div>
+  				</div>
+  				<div class="col-md-6">
+  					<div class="content-box-large">
+		  				<div class="panel-heading">
+							<div class="panel-title">Enumerate Subdomain</div>
+							
+							
+						</div>
+		  				<div class="panel-body">
+									<thead>
+										</thead>
+										<tbody>
+												{% for val in subdomain %}
+											<tr>
+												<td>{{val}}</td> <br>
+											</tr>
+											{% endfor %}
+										</tbody>
+									</table>
+		  				</div>
+		  			</div>
+  				</div>
+  			</div>
+
+  			<div class="content-box-large">
+  				<div class="panel-heading">
+					<div class="panel-title">Whois</div>
+				</div>
+  				<div class="panel-body">
+  				<!-- {% for item in whois %}
+    		<p> {{ item }} </p>
+						{% endfor %}   -->
+						
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Data</th>
+									<th>Values</th>
+								</tr>
+							</thead>
+							<tbody>
+									{% for key,val in whois.items() %}
+								<tr>
+									<td>{{key}}</td>
+									<td>{{val}}</td>
+									
+								</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+						
+  					</div>
+  				</div>
+  			</div>
+
+		  </div>
 		</div>
-	</article> <!-- card-group-item.// -->
-	
-	<article class="card-group-item">
-		<header class="card-header">
-			<h6 class="title">Subdomain Enumerate </h6>
-		</header>
-		<div class="filter-content">
-			<div class="card-body">
-			
-			</div> <!-- card-body.// -->
-		</div>
-	</article> <!-- card-group-item.// -->
-</div> <!-- card.// -->
-	</aside> <!-- col.// -->
-    
-    <aside class="col-sm-4">
-        <div class="card">
-            <article class="card-group-item">
-                <header class="card-header">
-                    <h6 class="title">Whois </h6>
-                </header>
-                <div class="filter-content">
-                    <div class="card-body">
-                      {{whois}}
-                    </div> <!-- card-body.// -->
-                </div>
-            </article> <!-- card-group-item.// -->
-            
-            <article class="card-group-item">
-                <header class="card-header">
-                    <h6 class="title">IP Block </h6>
-                </header>
-                <div class="filter-content">
-                    <div class="card-body">
-                    
-                    </div> <!-- card-body.// -->
-                </div>
-            </article> <!-- card-group-item.// -->
-        </div> <!-- card.// -->
-            </aside> <!-- col.// -->
-            <aside class="col-sm-4">
-                <div class="card">
-                    <article class="card-group-item">
-                        <header class="card-header">
-                            <h6 class="title">PortScanning </h6>
-                        </header>
-                        <div class="filter-content">
-                            <div class="card-body">
-                              
-                              
-                    </article> <!-- card-group-item.// -->
-                    
-                    <article class="card-group-item">
-                        <header class="card-header">
-                            <h6 class="title">Reverse DNS </h6>
-                        </header>
-                        <div class="filter-content">
-                            <div class="card-body">
-                            
-                            </div> <!-- card-body.// -->
-                        </div>
-                    </article> <!-- card-group-item.// -->
-                </div> <!-- card.// -->
-                    </aside> <!-- col.// -->
-                    
-                    <aside class="col-sm-4">
-                        <div class="card">
-                            <article class="card-group-item">
-                                <header class="card-header">
-                                    <h6 class="title">Tecnology Identification </h6>
-                                </header>
-                                <div class="filter-content">
-                                    <div class="card-body">
-                                    
-                                    </div> <!-- card-body.// -->
-                                </div>
-                            </article> <!-- card-group-item.// -->
-                            
-                             <!-- card-group-item.// -->
-                        </div> <!-- card.// -->
-                            
-</div>
-<!--container end.//-->
- <!-- Footer -->
- <footer class="footer bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-          <ul class="list-inline mb-2">
-            <li class="list-inline-item">
-              <a href="#">About</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-          </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Texugo Scan 2019. All Rights Reserved.</p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
-              </a>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-github fa-2x fa-fw"></i>
-                </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </footer>
+
+		 <!-- Footer -->
+		 <footer class="footer bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+						<ul class="list-inline mb-2">
+							<li class="list-inline-item">
+								<a href="#">About</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Contact</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Terms of Use</a>
+							</li>
+							<li class="list-inline-item">&sdot;</li>
+							<li class="list-inline-item">
+								<a href="#">Privacy Policy</a>
+							</li>
+						</ul>
+						<p class="text-muted small mb-4 mb-lg-0">&copy; Texugo Scan 2019. All Rights Reserved.</p>
+					</div>
+					<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item mr-3">
+								<a href="#">
+									<i class="fab fa-facebook fa-2x fa-fw"></i>
+								</a>
+							</li>
+							<li class="list-inline-item mr-3">
+								<a href="#">
+									<i class="fab fa-twitter-square fa-2x fa-fw"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-instagram fa-2x fa-fw"></i>
+								</a>
+								<li class="list-inline-item">
+									<a href="#">
+										<i class="fab fa-github fa-2x fa-fw"></i>
+									</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 
- <!-- Bootstrap core JavaScript -->
- <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
- <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
- <script src="{{ url_for('static', filename='js/form.js') }}"></script>
 
 
-</body>
+  <link href="{{ url_for('static', filename='vendors/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" media="screen">
+			 <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <!--<script src="{{ url_for('static', filename='js/form.js') }}"></script>-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="{{ url_for('static', filename='vendors/datatables/js/jquery.dataTables.min.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='vendors/datatables/dataTables.bootstrap.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/tables.js') }}"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+		<!--<script src="{{ url_for('static', filename='js/form.js') }}"></script>-->
+  </body>
+</html>

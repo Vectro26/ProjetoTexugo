@@ -43,9 +43,9 @@ def collect():
         Technology = TechnologyIdentification.TechnologyIdentification(URL)
         IP = IpBlock.WhoisCollect(URL)
         DNS = ReverseDNS.ReverseNameDNS(URL)
-        return render_template('tables.html', banner=Banner, port=Port, whois=whois, nameServer=DNS, IpBlock=IP, Technology=Technology, subdomain=Subdomain)
+        return render_template('result.html',host=URL, banner=Banner, port=Port, whois=whois, nameServer=DNS, IpBlock=IP, Technology=Technology, subdomain=Subdomain)
     else:
-        return render_template('result.html')
+        return render_template('Error: Make sure the link is valid or is spelled correctly')
 
 
 if __name__ == "__main__":
