@@ -1,0 +1,18 @@
+Source Entity,Target Entity
+201.59.231.12,201.0.0.0-201.255.255.255
+201.59.231.12,srv-ns01.mprn.mp.br
+201.59.231.4,www.mprn.mp.br
+http://www.mprn.mp.br/portal/,www.mprn.mp.br
+mprn.mp.br,201.59.231.12
+mprn.mp.br,201.59.231.43
+mprn.mp.br,cert@cert.br
+mprn.mp.br,Diretoria de Tecnologia da Informa��o
+mprn.mp.br,imap.mprn.mp.br
+mprn.mp.br,intranet.mprn.mp.br
+mprn.mp.br,mail-abuse@cert.br
+mprn.mp.br,mail.mprn.mp.br
+mprn.mp.br,saci
+mprn.mp.br,smtp.mprn.mp.br
+mprn.mp.br,www.mprn.mp.br
+www.mprn.mp.br,201.59.231.4
+www.mprn.mp.br,mprn.mp.br

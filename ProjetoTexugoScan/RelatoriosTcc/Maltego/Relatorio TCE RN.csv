@@ -1,0 +1,27 @@
+Source Entity,Target Entity
+186.209.105.200,+598 2604 2222
+186.209.105.200,186.0.0.0
+186.209.105.200,186.209.105.192
+186.209.105.200,186.209.96.0
+186.209.105.200,186.255.255.255
+186.209.105.200,abuse@lacnic.net
+186.209.105.200,cert@cert.br
+186.209.105.200,Davi Cunha
+186.209.105.200,Gerencia de Redes
+186.209.105.200,LACNIC
+186.209.105.200,mail-abuse@cert.br
+186.209.105.200,Montevideo
+186.209.105.200,OrgAbuseName
+186.209.105.200,OrgId
+186.209.105.200,OrgTechName
+186.209.105.200,whois-contact@lacnic.net
+http://www.tce.rn.gov.br/,www.tce.rn.gov.br
+www.tce.rn.gov.br,186.209.105.200
+www.tce.rn.gov.br,Cascading Style Sheets
+www.tce.rn.gov.br,Content Security Policy
+www.tce.rn.gov.br,Content Type Options
+www.tce.rn.gov.br,HSTS
+www.tce.rn.gov.br,SEO_TITLE
+www.tce.rn.gov.br,Strict Transport Security
+www.tce.rn.gov.br,X-Frame-Options
+www.tce.rn.gov.br,X-XSS-Protection

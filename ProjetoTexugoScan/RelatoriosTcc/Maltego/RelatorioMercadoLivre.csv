@@ -1,0 +1,24 @@
+Source Entity,Target Entity
+99.84.216.118,99.83.64.0-99.84.255.255
+99.84.216.118,server-99-84-216-118.iad79.r.cloudfront.net
+99.84.216.2,99.83.64.0-99.84.255.255
+99.84.216.2,server-99-84-216-2.iad79.r.cloudfront.net
+99.84.216.29,99.83.64.0-99.84.255.255
+99.84.216.29,server-99-84-216-29.iad79.r.cloudfront.net
+99.84.216.78,99.83.64.0-99.84.255.255
+99.84.216.78,server-99-84-216-78.iad79.r.cloudfront.net
+https://www.mercadolivre.com.br/,www.mercadolivre.com.br
+mercadolivre.com.br,BR
+mercadolivre.com.br,cert@cert.br
+mercadolivre.com.br,domains@mercadolibre.com
+mercadolivre.com.br,mail-abuse@cert.br
+mercadolivre.com.br,mail.mercadolivre.com.br
+mercadolivre.com.br,ms.mercadolivre.com.br
+mercadolivre.com.br,www.mercadolivre.com.br
+mercadolivre.com.br,xml.mercadolivre.com.br
+www.mercadolivre.com.br,99.84.216.118
+www.mercadolivre.com.br,99.84.216.2
+www.mercadolivre.com.br,99.84.216.29
+www.mercadolivre.com.br,99.84.216.78
+www.mercadolivre.com.br,mercadolivre.com.br
+www.mercadolivre.com.br,www.mercadolivre.com.br

@@ -1,0 +1,181 @@
+Source Entity,Target Entity
+172.217.7.163,172.217.0.0-172.217.255.255
+172.217.7.163,iad30s09-in-f163.1e100.net
+172.217.7.163,iad30s09-in-f3.1e100.net
+google.com.br,cert@cert.br
+google.com.br,earth.google.com.br
+google.com.br,google.google.com.br
+google.com.br,groups.google.com.br
+google.com.br,mail-abuse@cert.br
+google.com.br,news.google.com.br
+google.com.br,notebook.google.com.br
+google.com.br,photo.google.com.br
+google.com.br,photos.google.com.br
+google.com.br,print.google.com.br
+google.com.br,ww.google.com.br
+google.com.br,www.google.com.br
+https://www.google.com.br/,www.google.com.br
+www.google.com.br,172.217.7.163
+www.google.com.br,Adobe ColdFusion
+www.google.com.br,Adobe Dynamic Tag Management
+www.google.com.br,Adometry
+www.google.com.br,AJAX Libraries API
+www.google.com.br,Akamai
+www.google.com.br,AliExpress
+www.google.com.br,Alternate Protocol
+www.google.com.br,Amazon Associates
+www.google.com.br,Amazon S3
+www.google.com.br,Angular JS
+www.google.com.br,Angular JS v1
+www.google.com.br,Angular Material
+www.google.com.br,Apple Mobile Web App Capable
+www.google.com.br,Apple Mobile Web App Status Bar Style
+www.google.com.br,Apple Mobile Web Clips Icon
+www.google.com.br,Arabic HREF LANG
+www.google.com.br,Azure Edge
+www.google.com.br,Canonical Content Tag
+www.google.com.br,Chinese HREF LANG
+www.google.com.br,CloudFront
+www.google.com.br,Cloudinary
+www.google.com.br,Content Delivery Network
+www.google.com.br,Copyright Year 2016
+www.google.com.br,CreateJS
+www.google.com.br,Device Pixel Ratio
+www.google.com.br,Device Width
+www.google.com.br,Digital Ocean Spaces
+www.google.com.br,DMARC
+www.google.com.br,dotCMS
+www.google.com.br,DoubleClick Bid Manager
+www.google.com.br,DoubleClick Floodlight
+www.google.com.br,DoubleClick.Net
+www.google.com.br,Dynatrace
+www.google.com.br,Efficient Frontier
+www.google.com.br,English HREF LANG
+www.google.com.br,Euro
+www.google.com.br,Everest Technologies
+www.google.com.br,Facebook Like
+www.google.com.br,Facebook Sharer
+www.google.com.br,Fastly CDN
+www.google.com.br,FeedBurner
+www.google.com.br,French HREF LANG
+www.google.com.br,German HREF LANG
+www.google.com.br,Getty Images
+www.google.com.br,Gist
+www.google.com.br,Global Site Tag
+www.google.com.br,GoDaddy CDN
+www.google.com.br,Google
+www.google.com.br,Google Adsense
+www.google.com.br,Google Adsense for Search
+www.google.com.br,Google AdSense Integrator
+www.google.com.br,Google Analytics
+www.google.com.br,Google Analytics Anonymize IP
+www.google.com.br,Google Analytics Classic
+www.google.com.br,Google Analytics Enhanced Link Attribution
+www.google.com.br,Google Analytics with Ad Tracking
+www.google.com.br,Google API
+www.google.com.br,Google Apps for Business
+www.google.com.br,Google Charts
+www.google.com.br,Google Closure
+www.google.com.br,Google Consumer Surveys
+www.google.com.br,Google Conversion Tracking
+www.google.com.br,Google Custom Search
+www.google.com.br,Google DNS
+www.google.com.br,Google Font API
+www.google.com.br,Google Front End
+www.google.com.br,Google Hosted Angular Material
+www.google.com.br,Google Hosted AngularJS
+www.google.com.br,Google Hosted Libraries
+www.google.com.br,Google Identity Platform
+www.google.com.br,Google JS Api
+www.google.com.br,Google Maps
+www.google.com.br,Google Maps API
+www.google.com.br,Google Maps for Work
+www.google.com.br,Google No Translate
+www.google.com.br,Google Plus One Button
+www.google.com.br,Google Plus One Platform
+www.google.com.br,Google Postini Services
+www.google.com.br,Google Remarketing
+www.google.com.br,Google Search Appliance
+www.google.com.br,Google SSL
+www.google.com.br,Google Tag Manager
+www.google.com.br,Google Universal Analytics
+www.google.com.br,Google Web Server
+www.google.com.br,Google Web Toolkit
+www.google.com.br,Google Webmaster
+www.google.com.br,google.com.br
+www.google.com.br,GSAP
+www.google.com.br,GStatic Google Static Content
+www.google.com.br,Hammer JS
+www.google.com.br,Hindi HREF LANG
+www.google.com.br,HSTS
+www.google.com.br,HTML5 DocType
+www.google.com.br,HTML5 History API
+www.google.com.br,html5shiv
+www.google.com.br,IPhone / Mobile Compatible
+www.google.com.br,IPv6
+www.google.com.br,iStockPhoto
+www.google.com.br,J2EE
+www.google.com.br,Japanese HREF LANG
+www.google.com.br,Japanese Yen
+www.google.com.br,Javascript
+www.google.com.br,jQuery
+www.google.com.br,jQuery 1.6.4
+www.google.com.br,jQuery 1.9.1
+www.google.com.br,JSON 3
+www.google.com.br,Kaltura
+www.google.com.br,Korean HREF LANG
+www.google.com.br,Lightbox
+www.google.com.br,LPGenerator
+www.google.com.br,Marfeel
+www.google.com.br,Max Width
+www.google.com.br,Microdata
+www.google.com.br,Microdata for Google Shopping
+www.google.com.br,Min Width
+www.google.com.br,Mobile Non Scaleable Content
+www.google.com.br,Modernizr
+www.google.com.br,MSN/Bing Webmaster
+www.google.com.br,Navigator GeoLocation
+www.google.com.br,Orientation
+www.google.com.br,P3P Policy
+www.google.com.br,Perl
+www.google.com.br,PHP
+www.google.com.br,Picturefill
+www.google.com.br,pixi.js
+www.google.com.br,Portuguese
+www.google.com.br,Pound Sterling
+www.google.com.br,QUIC
+www.google.com.br,reCAPTCHA
+www.google.com.br,Resolution
+www.google.com.br,RSS
+www.google.com.br,Russian HREF LANG
+www.google.com.br,ScrollMagic
+www.google.com.br,SEO_TITLE
+www.google.com.br,Shockwave Flash Embed
+www.google.com.br,Shutterstock
+www.google.com.br,Smart App Banner
+www.google.com.br,Spanish HREF LANG
+www.google.com.br,SPF
+www.google.com.br,srcset
+www.google.com.br,SSL by Default
+www.google.com.br,Strict Transport Security
+www.google.com.br,SWFObject
+www.google.com.br,Thai HREF LANG
+www.google.com.br,TrueFit
+www.google.com.br,TweenMax
+www.google.com.br,Twitter CDN
+www.google.com.br,TYPO3
+www.google.com.br,UTF-8
+www.google.com.br,Viewport Meta
+www.google.com.br,Vimeo CDN
+www.google.com.br,WAI-ARIA
+www.google.com.br,WebEx Panel
+www.google.com.br,WebsiteBaker
+www.google.com.br,WordPress Grid
+www.google.com.br,Workplace by Facebook
+www.google.com.br,X-Frame-Options
+www.google.com.br,X-XSS-Protection
+www.google.com.br,Yahoo User Interface
+www.google.com.br,yepnope
+www.google.com.br,YouTube
+www.google.com.br,YouTube IFrame API
+www.google.com.br,YouTube IFrame Upload

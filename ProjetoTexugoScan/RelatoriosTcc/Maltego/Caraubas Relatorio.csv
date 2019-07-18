@@ -1,0 +1,16 @@
+Source Entity,Target Entity
+177.87.96.3,177.0.0.0-177.255.255.255
+177.87.96.3,ns1.rn.gov.br
+caraubas.rn.gov.br,177.87.96.3
+caraubas.rn.gov.br,177.87.96.4
+caraubas.rn.gov.br,177.87.97.7
+caraubas.rn.gov.br,cert@cert.br
+caraubas.rn.gov.br,ftp.caraubas.rn.gov.br
+caraubas.rn.gov.br,mail-abuse@cert.br
+caraubas.rn.gov.br,mysql.caraubas.rn.gov.br
+caraubas.rn.gov.br,Rio Grande do Norte
+caraubas.rn.gov.br,Secretaria de Estado da Tributa��o
+caraubas.rn.gov.br,Sergio Ramiro Rivero Guardia
+caraubas.rn.gov.br,www.caraubas.rn.gov.br
+http://www.caraubas.rn.gov.br/,www.caraubas.rn.gov.br
+www.caraubas.rn.gov.br,caraubas.rn.gov.br
