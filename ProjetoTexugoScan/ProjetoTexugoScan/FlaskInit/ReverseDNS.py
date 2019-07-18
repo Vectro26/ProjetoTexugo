@@ -2,9 +2,15 @@ import socket
 import Whois as URLAdequacy
 def ReverseNameDNS(URL):
 
-    IP =  GetIp(URL)
-    nameServer=socket.gethostbyaddr(IP) 
-    return nameServer[0]
+    
+    try:
+       IP =  GetIp(URL) 
+       nameServer=socket.gethostbyaddr(IP)
+       return nameServer[0]
+    except socket.error as e:
+        return "None"
+     
+    
 
 def GetIp(URL):
 
