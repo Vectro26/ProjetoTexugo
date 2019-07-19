@@ -9,6 +9,7 @@ import PortScanning
 import ReverseDNS
 import TechnologyIdentification
 import IpBlock
+from flask_caching import Cache
 
 app = Flask(__name__)
 
@@ -19,31 +20,26 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/result', methods=['POST'])
-def result(Port):
-    if request.args.get('banner'):
-        banner = request.args['banner']
-    else:
-        banner = ""
-
-    return render_template('result.html', banner=banner)
     # return response
 
 
 @app.route('/collect', methods=['POST'])
 def collect():
+    cache = Cache()
+
     URL = request.form['url']
 
     requests = Verification.URLVerification(URL)
     if requests == True:
         Subdomain = EnumerationSubdomain.BruteforceEnumeration(URL)
+        QtdSub= len(Subdomain)
         Banner = BannerGrabing.BannerCollect(URL)
         whois = Whois.WhoisCollect(URL)
         Port = PortScanning.PortScannerVerification(URL)
         Technology = TechnologyIdentification.TechnologyIdentification(URL)
         IP = IpBlock.WhoisCollect(URL)
         DNS = ReverseDNS.ReverseNameDNS(URL)
-        return render_template('result.html',host=URL, banner=Banner, port=Port, whois=whois, nameServer=DNS, IpBlock=IP, Technology=Technology, subdomain=Subdomain)
+        return render_template('result.html',qtd=QtdSub,host=URL, banner=Banner, port=Port, whois=whois, nameServer=DNS, IpBlock=IP, Technology=Technology, subdomain=Subdomain)
     else:
         return 'Error: Make sure the link is valid or is spelled correctly'
 

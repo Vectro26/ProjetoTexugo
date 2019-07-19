@@ -8,9 +8,11 @@ domain = ""
 subdomainList=[]
 domainDetected=[]
 def BruteforceEnumeration(URL):
+    domainDetected.clear()
     domain = detected.AdequacyURL(URL)
     ListGenerate(domain)
     return domainDetected
+
 def ListGenerate(domain):
 
     with open('/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit/bruteforceSubdomain/subdomainNames.txt') as names:
