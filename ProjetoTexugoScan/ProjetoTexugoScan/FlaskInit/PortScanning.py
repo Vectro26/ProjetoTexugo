@@ -2,7 +2,8 @@ import ReverseDNS as IP
 import socket
 StatusPort = []
 def PortScannerVerification(URL):
-     ports = [21,22,23,80]
+     StatusPort.clear()
+     ports = [21,22,23,80,443]
      IpPort =IP.GetIp(URL)
      for port in ports: 
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -14,3 +15,4 @@ def PortScannerVerification(URL):
              StatusPort.append(str(port))
 
              return StatusPort
+     

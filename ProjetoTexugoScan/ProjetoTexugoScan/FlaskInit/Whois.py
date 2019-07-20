@@ -5,10 +5,14 @@ import tldextract
 def WhoisCollect(URL):
 
     domainURL = AdequacyURL(URL)
+    try:
+        result = whois.query(domainURL)
+        print(result.__dict__)
+        return (result.__dict__)
+    except :  #NOT FOUND
+        return 'None'   
     
-    result = whois.query(domainURL)
-    print(result.__dict__)
-    return (result.__dict__)
+    
     
 
 

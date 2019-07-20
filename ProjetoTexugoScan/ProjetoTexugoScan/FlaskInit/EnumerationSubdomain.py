@@ -9,6 +9,7 @@ subdomainList=[]
 domainDetected=[]
 def BruteforceEnumeration(URL):
     domainDetected.clear()
+    subdomainList.clear()
     domain = detected.AdequacyURL(URL)
     ListGenerate(domain)
     return domainDetected
@@ -25,6 +26,7 @@ def ListGenerate(domain):
     pool.map(TestRequest, subdomainList)
     
 def TestRequest(subdomainList):
+    
     try:  
          
         IP=socket.gethostbyname_ex(subdomainList)
@@ -35,4 +37,4 @@ def TestRequest(subdomainList):
         else:
             domainDetected.append(check) 
     except socket.gaierror: 
-        pass
+        return 'None'
