@@ -3,7 +3,7 @@ http://www.carnaubais.rn.gov.br/,Texugo Scan,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,
 ,Maltego,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,,T2,Port Scanning
 ,Netcraft,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,T3,Subdomain enumeration
 ,,,,,,,,,,T4,Netblock Identification
-https://assu.rn.gov.br/,Texugo Scan,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,T5,Banner Grabbing 
+https://assu.rn.gov.br/,Texugo Scan,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,T5,Banner Grabbing
 ,Maltego,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,,T6,Reverse DNS Identification
 ,Netcraft,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,,T7,Tecnology Identification
 ,,,,,,,,,,,

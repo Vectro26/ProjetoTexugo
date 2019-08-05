@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect, make_response
+from flask  import Flask, render_template, request, url_for, redirect, make_response
 import pdfkit
 import Verification
 import time
@@ -9,7 +9,6 @@ import PortScanning
 import ReverseDNS
 import TechnologyIdentification
 import IpBlock
-from flask_caching import Cache
 
 app = Flask(__name__)
 
@@ -25,7 +24,6 @@ def index():
 
 @app.route('/collect', methods=['POST'])
 def collect():
-    cache = Cache()
 
     URL = request.form['url']
 

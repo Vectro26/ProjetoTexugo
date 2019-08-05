@@ -1,0 +1,61 @@
+Starting Jedi Python language engine.
+##########Linting Output - pylint##########
+************* Module FlaskInit.__init__
+1,0,error,syntax-error:unexpected indent (<unknown>, line 1)
+##########Linting Output - pylint##########
+************* Module FlaskInit
+1,0,error,import-error:Unable to import 'flask'
+2,0,error,import-error:Unable to import 'pdfkit'
+12,0,error,import-error:Unable to import 'flask_caching'
+28,4,warning,unused-variable:Unused variable 'cache'
+
+------------------------------------------------------------------
+Your code has been rated at 5.15/10 (previous run: 5.15/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module FlaskInit
+1,0,error,import-error:Unable to import 'flask'
+2,0,error,import-error:Unable to import 'pdfkit'
+27,12,error,undefined-variable:Undefined variable 'Cache'
+27,4,warning,unused-variable:Unused variable 'cache'
+
+------------------------------------------------------------------
+Your code has been rated at 5.00/10 (previous run: 5.15/10, -0.15)
+
+##########Linting Output - pylint##########
+************* Module FlaskInit
+1,0,error,import-error:Unable to import 'flask'
+2,0,error,import-error:Unable to import 'pdfkit'
+
+------------------------------------------------------------------
+Your code has been rated at 6.77/10 (previous run: 5.00/10, +1.77)
+
+##########Linting Output - pylint##########
+************* Module FlaskInit
+1,0,error,import-error:Unable to import 'flask'
+2,0,error,import-error:Unable to import 'pdfkit'
+
+------------------------------------------------------------------
+Your code has been rated at 6.77/10 (previous run: 6.77/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module FlaskInit.Whois
+1,0,error,import-error:Unable to import 'whois'
+2,0,error,import-error:Unable to import 'tldextract'
+
+------------------------------------------------------------------
+Your code has been rated at 4.74/10 (previous run: 4.74/10, +0.00)
+
+##########Linting Output - pylint##########
+************* Module FlaskInit.Whois
+1,0,error,import-error:Unable to import 'whois'
+2,0,error,import-error:Unable to import 'tldextract'
+
+------------------------------------------------------------------
+Your code has been rated at 4.74/10 (previous run: 4.74/10, +0.00)
+
+##########Linting Output - pylint##########
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.77/10, +3.23)
+

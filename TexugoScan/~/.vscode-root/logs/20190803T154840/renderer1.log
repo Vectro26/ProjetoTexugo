@@ -1,0 +1,80 @@
+[2019-08-03 15:48:45.415] [renderer1] [info] no standard startup: not the explorer viewlet
+[2019-08-03 15:49:13.358] [renderer1] [info] no standard startup: not just one text editor
+[2019-08-03 15:53:54.288] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314
+[2019-08-03 20:29:58.481] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314
+[2019-08-03 20:31:57.513] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314
+[2019-08-03 20:32:27.252] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314
+[2019-08-03 20:32:49.346] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314
+[2019-08-03 20:33:44.243] [renderer1] [error] Tree element not found: [object Object]: Error: Tree element not found: [object Object]
+    at e.getElementLocation (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:985)
+    at e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:99:340)
+    at i.e.isCollapsed (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:1017:981)
+    at t.revealMarkersForCurrentActiveEditor (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:276)
+    at t.autoReveal (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4900:95)
+    at t.onActiveEditorChanged (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4897:212)
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:332)
+    at t.doEmitActiveEditorChangeEvent (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:709)
+    at t.handleActiveEditorChange (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:485)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:4911:833
+    at e.fire (file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:81:312)
+    at file:///usr/share/code/resources/app/out/vs/workbench/workbench.main.js:5348:314

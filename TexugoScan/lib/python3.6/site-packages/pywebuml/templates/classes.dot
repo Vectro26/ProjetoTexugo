@@ -1,0 +1,76 @@
+digraph G {
+    fontname = "Sans"
+    fontsize = 8
+
+    node [
+            fontname = "Sans"
+            fontsize = 8
+            shape = "record"
+    ];
+
+    edge [
+            fontname = "Sans"
+            fontsize = 8
+    ];
+    
+   
+    // colors taken from http://www.graphviz.org/doc/info/colors.html
+
+    {% set edge_attribute_colors = cycler('aquamarine4', 'darkseagreen3', 'chocolate4', 'darkorange1', 'gold', 'blue') %}
+    
+    // html definition of the node. Taken from here: 
+
+    {% for model_class in classes %}
+        // {{ edge_attribute_colors.next() }}
+        {{ model_class.package|replace('.', '') }} [
+            label = <
+                <table border="0" cellspacing="0" href="/search?selected_package={{ model_class.package }}">
+                <tr><td bgcolor="{{ edge_attribute_colors.current }}">{{ model_class|get_class_type()|e }}<br></br> {{ model_class.name }}</td></tr>
+                
+                <tr><td border="1" color="black" bgcolor="black" cellspacing="0" cellpadding="0"></td></tr>
+                <tr><td>{{ model_class.package }}</td></tr>
+                <tr><td>{{ model_class.filepath }}</td></tr>
+
+                {% if should_show_attributes %}
+                <tr><td border="1" color="black" bgcolor="black" cellspacing="0" cellpadding="0"></td></tr>
+                {% for attr in model_class.attributes %}
+                <tr><td>{{ attr.name }} : {{ attr.type|e }}</td></tr>
+                {% endfor %}
+                {% endif %}
+                
+
+                {% if should_show_methods %}
+                <tr><td border="1" color="black" bgcolor="black" cellspacing="0" cellpadding="0"></td></tr>
+                {% for method in model_class.methods %}
+                <tr><td>{{ method.signature }}</td></tr>
+                {% endfor %}
+                {% endif %}
+            </table>
+            >,
+            color = {{ edge_attribute_colors.current }}
+        ];
+
+
+        {% for inner in model_class.inner_classes %}
+            {{ model_class.package|create_edge(inner.package, inner.name) }} [arrowhead = ediamond, label = "Defines"]; 
+        {% endfor %}
+
+        {% for base in model_class.base_classes %}
+            {{ model_class.package|create_edge(base.base_class_package) }} [label = Extends, color = red, weight=bold];
+        {% endfor %}
+
+        {% for interface in model_class.implemented_interfaces %}
+            {{ model_class.package|create_edge(interface.interface_class_package) }} [label = Implements, color = red, weight=bold];
+        {% endfor %}
+
+        {% for attr in model_class.attributes %}
+            {% if attr.referenced_class_package %}
+                {% if model_class|should_create_edge(attr.referenced_class_package) %}
+                    {{ model_class.package|create_edge(attr.referenced_class_package) }} [label = {{ attr.name}}, color = {{ edge_attribute_colors.current }}, weight = bold];
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+    {% endfor %}
+};
+

@@ -1,0 +1,14 @@
+#leftColumn {
+	float: left;
+	width: 25%;
+	min-width: 425px;
+}
+
+#rightColumn {
+	float: left;
+	width: 60%;
+}
+
+label, input, select, submit, button{
+    font-size: 12px;
+}

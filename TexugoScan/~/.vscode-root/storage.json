@@ -1,0 +1,32 @@
+{
+    "telemetry.machineId": "cafd7b32c43d395488f0b173de944fc521c51e17705ae06c20a7f6a2b83162e4",
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "pickerWorkingDir": "/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan",
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit"
+        ],
+        "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit",
+                "external": "file:///home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit",
+                "path": "/home/vectro26/Documentos/TexugoScan/ProjetoTexugoScan/ProjetoTexugoScan/FlaskInit",
+                "scheme": "file"
+            },
+            "backupPath": "/home/vectro26/Documentos/TexugoScan/TexugoScan/~/.vscode-root/Backups/a12a6849bc4873f8c4a43a57a695f0c9",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 32,
+                "width": 1366,
+                "height": 736
+            }
+        }
+    }
+}

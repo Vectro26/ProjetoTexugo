@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Index</title>
+        <link type="text/css"
+            href="{{ url_for('static', filename='css/reset.css') }}"
+            rel="stylesheet" />
+        <link type="text/css"
+            href="{{ url_for('static', filename='css/pywebuml.css') }}"
+            rel="stylesheet" />
+        <link type="text/css"
+            href="{{ url_for('static', filename='css/smoothness/jquery-ui-1.8.9.custom.css') }}"
+            rel="stylesheet" />
+        <link type="text/css"
+            href="{{ url_for('static', filename='css/jquery.treeview.css') }}"
+            rel="stylesheet" />
+
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery-1.4.4.min.js') }}"></script>
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery-ui-1.8.9.custom.min.js') }}"></script>
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery.cookie.js') }}"></script>
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='js/jquery.treeview.js') }}"></script>
+        <!--
+             TODO alguno de estos scripts me esta tirando un error. Por eso los comente...
+            <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.treeview.async.js') }}"></script>
+            <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.treeview.edit.js') }}"></script>        
+            <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.treeview.sortable.js') }}"></script>
+        -->
+        <script type="text/javascript"
+            src="{{ url_for('static', filename='js/pywebuml.js') }}"></script>
+    </head>
+    <body>
+    <div id="leftColumn">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1" class="tab_name">Search</a></li>                               
+                <li><a href="#tabs-2" class="tab_name">Current Classes</a></li>
+            </ul>
+            <div id="tabs-1">
+                <form method="get" action="/search">                    
+                    <fieldset>                                                
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><label for="autocompleteSearch" />Class name:</label></td>
+                                    <td><input type="text" id="autocompleteSearch" name="selected_package" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="show_attributes">Show Attributes?</label></td>
+                                    <td><input type="checkbox" name="show_attributes" value="true" checked="checked"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="show_methods">Show Methods?</label></td>
+                                    <td><input type="checkbox" name="show_methods" value="true" checked="checked"/></td>
+                                </tr>
+                                <!--
+                                <tr>
+                                    <td><label for="levels"> Show X related classes: </label></td>
+                                    <td><input type="text" id="levels" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="attributesType"> Show the attritubtes that are: </label>
+                                    </td>
+                                    <td>
+                                        <select id="attributesTypes">
+                                            <option value="all" selected="selected">All</option>
+                                            <option value="none">Don't show attributes</option>                                        
+                                            <option value="public">Public</option>
+                                            <option value="protected">Protected</option>
+                                            <option value="private">Private</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="methodTypes"> Show the methods that are:</label>
+                                    </td>
+                                    <td>
+                                        <select id="methodTypes">
+                                            <option value="all" selected="selected">All</option>
+                                            <option value="none">Don't show methods</option>                                            
+                                            <option value="public">Public</option>
+                                            <option value="protected">Protected</option>
+                                            <option value="private">Private</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                -->
+                            </tbody>
+                        </table>
+                    </fieldset>                    
+                    <input type="submit" value="Crear grafo" id="submit_button" />
+                </form>                
+            </div>            
+            <div id="tabs-2">
+                <ul>
+                    {% for klass in current_clases %}
+                    <li>
+                        {{ klass.name }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div id="searchConditions">
+                
+        </div>
+    </div>
+    <div id="rightColumn">
+        {% if image %}
+            <img src="static/tmp_dir/{{ image }}.png"></img>
+        {% endif %}
+    </div>
+    </body>
+</html>

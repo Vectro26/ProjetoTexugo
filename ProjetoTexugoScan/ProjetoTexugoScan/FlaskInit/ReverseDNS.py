@@ -14,6 +14,6 @@ def ReverseNameDNS(URL):
 
 def GetIp(URL):
 
- IP=socket.gethostbyname(URLAdequacy.AdequacyURL(URL))
+ IP2=socket.gethostbyname(URLAdequacy.AdequacyURL(URL))
 
- return IP
+ return IP2
